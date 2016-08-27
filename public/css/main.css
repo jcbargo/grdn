@@ -1,4 +1,7 @@
 /* YOUR CUSTOM STYLES */
+.hidden {
+    display: none;
+}
 .chip {
     display: inline-block;
     font-size: 13px;
