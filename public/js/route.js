@@ -19,10 +19,10 @@
       templateUrl: viewsBasePath + 'index.html'
     })
     .when('/new-orchard/name', {
-      templateUrl: viewsBasePath + 'orchard-name.html'
+      templateUrl: viewsBasePath + 'orchard/name.html'
     })
     .when('/new-orchard/community', {
-      templateUrl: viewsBasePath + 'orchard-community.html'
+      templateUrl: viewsBasePath + 'orchard/community.html'
     })
     // .when('<path>', {
     //   controller: '<ctrl-name>',
