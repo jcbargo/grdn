@@ -10,7 +10,7 @@
 }
 
 .tasks .card-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -38,4 +38,5 @@
 
 .tasks .options span {
   margin-left: 20px;
+  cursor: pointer;
 }

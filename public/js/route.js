@@ -37,6 +37,8 @@
       templateUrl: viewsBasePath + 'orchard-list.html'
     })
     .when('/tasks', {
+      controller: 'TasksCtrl',
+      controllerAs: 'tasksCtrl',
       templateUrl: viewsBasePath + 'tasks.html'
     })
     // .when('<path>', {
