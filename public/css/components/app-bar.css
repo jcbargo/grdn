@@ -1,0 +1,19 @@
+.app-bar .menuBtn {
+  display: inline-block;
+  margin: 0;
+}
+
+.app-bar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #455a64;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+  /*position: fixed;*/
+}
+
+.app-bar h1 {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: #fff;
+}
