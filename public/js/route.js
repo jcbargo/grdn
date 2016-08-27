@@ -30,6 +30,9 @@
     .when('/new-orchard/place', {
       templateUrl: viewsBasePath + 'orchard/place.html'
     })
+    .when('/new-orchard/dates', {
+      templateUrl: viewsBasePath + 'orchard/dates.html'
+    })
     .when('/new-orchard/products', {
       templateUrl: viewsBasePath + 'orchard/products.html'
     })
@@ -37,6 +40,8 @@
       templateUrl: viewsBasePath + 'orchard-list.html'
     })
     .when('/tasks', {
+      controller: 'TasksCtrl',
+      controllerAs: 'tasksCtrl',
       templateUrl: viewsBasePath + 'tasks.html'
     })
     // .when('<path>', {
