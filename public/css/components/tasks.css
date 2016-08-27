@@ -1,0 +1,41 @@
+.tasks .day-title {
+  margin: 20px 0 10px;
+}
+
+.tasks .color-tag {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.tasks .card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tasks .orchard-name {
+  background-color: #fff !important;
+  margin-bottom: 10px;
+}
+
+.tasks .orchard-name.blue {
+  color: #1397f1;
+}
+
+.tasks .orchard-name.green {
+  color: #4caf50;
+}
+
+.tasks .time {
+  float: right;
+}
+
+.tasks .options {
+  text-align: right;
+  color: #008a7b;
+}
+
+.tasks .options span {
+  margin-left: 20px;
+}
