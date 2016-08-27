@@ -24,29 +24,10 @@ grdn.mapInit = function() {
 
 }
 
-grdn.datePickerInit = function() {
-        $('#date-end').bootstrapMaterialDatePicker
-        ({
-            weekStart: 0, format: 'DD/MM/YYYY HH:mm'
-        });
-
-        $('#date-start').bootstrapMaterialDatePicker
-        ({
-            weekStart: 0, format: 'DD/MM/YYYY HH:mm', shortTime : true
-        }).on('change', function(e, date)
-        {
-            $('#date-end').bootstrapMaterialDatePicker('setMinDate', date);
-        });
-}
-
-
-
 // ==================== GLOBAL/INIT =========================
 /**
  * Function executed when document is ready. It calls all modules' init function.
  */
 $( document ).ready(function() {
     google.maps.event.addDomListener(window, 'load', grdn.mapInit);
-
-    grdn.datePickerInit();
 });

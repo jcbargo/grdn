@@ -17,7 +17,7 @@
          */
 
         $scope.$on('$viewContentLoaded', function(){
-          $log.debug('Hello');
+          // $log.debug('Hello');
           //Here your view content is fully loaded !!
         });
     }
