@@ -81,3 +81,47 @@
 .tasks .options span {
   margin-left: 20px;
 }
+
+.chip {
+    display: inline-block;
+    font-size: 13px;
+    color: rgba(0,0,0,.6);
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: #eceff1;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.chip,
+.chips .input {
+    font-weight: 500;
+    height: 32px;
+}
+.chip,
+.chip .close,
+.chips .input {
+    line-height: 32px;
+}
+.chip img {
+    float: left;
+    margin: 0 8px 0 -12px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+.chip .close {
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    padding-left: 8px;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    transition: all .1s linear;
+}
+.chip,
+.chip .close,
+.chips .input {
+    line-height: 32px;
+}
