@@ -19,7 +19,7 @@
         $scope.$on('$viewContentLoaded', function() {
             $('#date-start').bootstrapMaterialDatePicker
             ({
-                weekStart: 0, format: 'DD/MM/YYYY', shortTime : true
+                weekStart: 0, format: 'DD/MM/YYYY'
             });
         });
     }
