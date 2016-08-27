@@ -1,7 +1,7 @@
 var grdn = grdn || {},
     grdn = grdn.utils || {};
 
-grdn.initMap = function() {
+grdn.mapInit = function() {
 
     var var_location = new google.maps.LatLng(9.9012696,-83.9959812);
 
@@ -24,16 +24,10 @@ grdn.initMap = function() {
 
 }
 
-
-
-
-
 // ==================== GLOBAL/INIT =========================
 /**
  * Function executed when document is ready. It calls all modules' init function.
  */
 $( document ).ready(function() {
-
-        google.maps.event.addDomListener(window, 'load', grdn.initMap);
-    }
-);
+    google.maps.event.addDomListener(window, 'load', grdn.mapInit);
+});
