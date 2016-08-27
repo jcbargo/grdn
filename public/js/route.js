@@ -21,6 +21,9 @@
     .when('/orchard-name', {
       templateUrl: viewsBasePath + 'orchard-name.html'
     })
+    .when('/orchard-list', {
+      templateUrl: viewsBasePath + 'orchard-list.html'
+    })
     // .when('<path>', {
     //   controller: '<ctrl-name>',
     //   controllerAs: '<ctrl-alias>',
