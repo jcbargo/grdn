@@ -20,6 +20,16 @@
     left: 0;
     top: 0;
 }
+.orchard-card-field {
+    margin-top: 24px;
+}
+.orchard-dropdown {
+    width: 100%;
+    margin-left: 0px;
+}
+.orchard-dropdown-item {
+    margin: 24px 0;
+}
 .community-list {
     margin-bottom: 20px;
 }
