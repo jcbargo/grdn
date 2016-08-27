@@ -24,6 +24,9 @@
     .when('/new-orchard/community', {
       templateUrl: viewsBasePath + 'orchard/community.html'
     })
+    .when('/orchard-list', {
+      templateUrl: viewsBasePath + 'orchard-list.html'
+    })
     // .when('<path>', {
     //   controller: '<ctrl-name>',
     //   controllerAs: '<ctrl-alias>',
