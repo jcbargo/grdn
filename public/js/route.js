@@ -12,11 +12,14 @@
 
     var viewsBasePath = 'templates/';
 
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
 
     $routeProvider
     .when('/', {
       templateUrl: viewsBasePath + 'home.html'
+    })
+    .when('/orchard-name', {
+      templateUrl: viewsBasePath + 'orchard-name.html'
     })
     // .when('<path>', {
     //   controller: '<ctrl-name>',
