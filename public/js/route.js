@@ -16,7 +16,7 @@
 
     $routeProvider
     .when('/', {
-      templateUrl: viewsBasePath + 'index.html'
+      templateUrl: viewsBasePath + 'home.html'
     })
     .when('/new-orchard/name', {
       templateUrl: viewsBasePath + 'orchard/name.html'
