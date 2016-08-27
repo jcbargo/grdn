@@ -18,6 +18,9 @@
     .when('/', {
       templateUrl: viewsBasePath + 'home.html'
     })
+    .when('/sign-in', {
+      templateUrl: viewsBasePath + 'sign-in.html'
+    })
     .when('/new-orchard/name', {
       templateUrl: viewsBasePath + 'orchard/name.html'
     })
