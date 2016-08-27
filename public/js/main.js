@@ -1,7 +1,7 @@
 var grdn = grdn || {},
     grdn = grdn.utils || {};
 
-grdn.initMap = function() {
+grdn.mapInit = function() {
 
     var var_location = new google.maps.LatLng(9.9012696,-83.9959812);
 
@@ -24,7 +24,20 @@ grdn.initMap = function() {
 
 }
 
+grdn.datePickerInit = function() {
+        $('#date-end').bootstrapMaterialDatePicker
+        ({
+            weekStart: 0, format: 'DD/MM/YYYY HH:mm'
+        });
 
+        $('#date-start').bootstrapMaterialDatePicker
+        ({
+            weekStart: 0, format: 'DD/MM/YYYY HH:mm', shortTime : true
+        }).on('change', function(e, date)
+        {
+            $('#date-end').bootstrapMaterialDatePicker('setMinDate', date);
+        });
+}
 
 
 
@@ -33,7 +46,7 @@ grdn.initMap = function() {
  * Function executed when document is ready. It calls all modules' init function.
  */
 $( document ).ready(function() {
+    google.maps.event.addDomListener(window, 'load', grdn.mapInit);
 
-        google.maps.event.addDomListener(window, 'load', grdn.initMap);
-    }
-);
+    grdn.datePickerInit();
+});

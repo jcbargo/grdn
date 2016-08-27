@@ -42,3 +42,24 @@
 .chips .input {
     line-height: 32px;
 }
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1;
+}
+.media-left {
+    padding-right: 10px;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+.pswp__container, .pswp__img, .waves-effect, a, html {
+    -webkit-tap-highlight-color: transparent;
+}
