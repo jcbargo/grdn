@@ -36,7 +36,33 @@
   color: #008a7b;
 }
 
-.tasks .options span {
+.tasks .options .option {
   margin-left: 20px;
   cursor: pointer;
+}
+
+.tasks .options .more {
+  display: none;
+}
+
+.tasks .options .collapsed .less {
+  display: none;
+}
+
+.tasks .options .collapsed .more {
+  display: inline;;
+}
+
+.tasks .list-group {
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+
+.tasks .list-group button {
+  border: none;
+}
+
+.tasks .list-group .fa {
+  min-width: 15px;
+  margin-right: 10px;
 }
