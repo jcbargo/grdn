@@ -4,11 +4,11 @@
 
     angular
         .module('grdn')
-        .controller('OrchardsCtrl', OrchardsCtrl);
+        .controller('OrchardsDatesCtrl', OrchardsDatesCtrl);
 
-    OrchardsCtrl.$inject = ['$scope', '$log'];
+    OrchardsDatesCtrl.$inject = ['$scope', '$log'];
 
-    function OrchardsCtrl($scope, $log) {
+    function OrchardsDatesCtrl($scope, $log) {
 
         var self = this;
 
@@ -19,7 +19,7 @@
         $scope.$on('$viewContentLoaded', function() {
             $('#date-start').bootstrapMaterialDatePicker
             ({
-                weekStart: 0, format: 'DD/MM/YYYY', shortTime : true
+                weekStart: 0, format: 'DD/MM/YYYY'
             });
         });
     }
