@@ -1,1 +1,1 @@
-<?php include_once("home.html"); ?>
+<?php include_once("public/templates/mdb-free%20(2)/mdb-free/index.html"); ?>
