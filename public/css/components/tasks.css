@@ -27,6 +27,14 @@
   color: #4caf50;
 }
 
+.tasks .text-black {
+  color: #000;
+}
+
+.tasks .remove-margin {
+  margin: 0;
+}
+
 .tasks .time {
   float: right;
 }
@@ -36,7 +44,49 @@
   color: #008a7b;
 }
 
-.tasks .options span {
+.tasks .participants img{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.tasks .options .option {
   margin-left: 20px;
   cursor: pointer;
+}
+
+.swipe-right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  font-size: 20px;
+  color: #455a64;
+}
+
+.tasks .options .more {
+  display: none;
+}
+
+.tasks .options .collapsed .less {
+  display: none;
+}
+
+.tasks .options .collapsed .more {
+  display: inline;;
+}
+
+.tasks .list-group {
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+
+.tasks .list-group button {
+  border: none;
+}
+
+.tasks .list-group .fa {
+  min-width: 15px;
+  margin-right: 10px;
 }
