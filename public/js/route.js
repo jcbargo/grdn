@@ -27,6 +27,12 @@
     .when('/new-orchard/community', {
       templateUrl: viewsBasePath + 'orchard/community.html'
     })
+    .when('/new-orchard/place', {
+      templateUrl: viewsBasePath + 'orchard/place.html'
+    })
+    .when('/new-orchard/products', {
+      templateUrl: viewsBasePath + 'orchard/products.html'
+    })
     .when('/orchard-list', {
       templateUrl: viewsBasePath + 'orchard-list.html'
     })
