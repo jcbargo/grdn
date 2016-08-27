@@ -18,8 +18,11 @@
     .when('/', {
       templateUrl: viewsBasePath + 'home.html'
     })
-    .when('/orchard-name', {
-      templateUrl: viewsBasePath + 'orchard-name.html'
+    .when('/new-orchard/name', {
+      templateUrl: viewsBasePath + 'orchard/name.html'
+    })
+    .when('/new-orchard/community', {
+      templateUrl: viewsBasePath + 'orchard/community.html'
     })
     .when('/orchard-list', {
       templateUrl: viewsBasePath + 'orchard-list.html'
