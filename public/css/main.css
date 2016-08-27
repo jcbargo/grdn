@@ -2,6 +2,9 @@
 .hidden {
     display: none;
 }
+.navbar-fixed-bottom {
+    bottom: 0;
+}
 .chip {
     display: inline-block;
     font-size: 13px;
