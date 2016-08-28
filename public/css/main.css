@@ -74,36 +74,18 @@ header,
     height: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: #455a64;
-    }
-}
-
 /*Intro*/
-
-@media (max-width: 768px) {
-    .full-bg-img,
-    .view {
-        height: auto;
-        position: relative;
-    }
+.full-bg-img,
+.view {
+    height: auto;
+    position: relative;
 }
 
 .description {
     padding-top: 25%;
     padding-bottom: 3rem;
-    color: #455a64
-}
-
-@media (max-width: 992px) {
-    .description {
-        padding-top: 7rem;
-        text-align: center;
-    }
-    #app-mockup {
-        max-height: 400px;
-    }
+    color: #455a64;
+    text-align: center;
 }
 
 .floating-button {
