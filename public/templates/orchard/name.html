@@ -1,30 +1,35 @@
-<div class="orchard-card">
-    <div class="card-content">
-        <div class="card-block">
-
-            <!--Component-->
-            <div class="md-form">
-                <input type="text" id="name" class="form-control">
-                <label for="name" class="">Escribí el nombre de tu jardin</label>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="method" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccioná un método de cultivo</button>
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="method" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                    <a class="dropdown-item" href="#/new-orchard/community">Convencional</a>
-                    <a class="dropdown-item" href="#/new-orchard/community">Hidropónico</a>
-                    <a class="dropdown-item" href="#/new-orchard/community">Vertical</a>
+<input type='checkbox' id='sideToggle' hidden>
+<ng-include src="'templates/sidenav.html'"></ng-include>
+<div id='contentWrap'>
+    <div class="app-bar col-xs-12">
+        <label class='menuBtn' for='sideToggle'>&minus;</label>
+        <h1>Nuevo jardín</h1>
+    </div>
+    <div class="col-xs-12 orchard-card">
+        <div class="card-content">
+            <div class="card-block">
+                <!--Component-->
+                <div class="md-form">
+                    <input type="text" id="name" class="form-control">
+                    <label for="name" class="">Escribí el nombre de tu jardin</label>
+                </div>
+                <div class="dropdown orchard-card-field">
+                    <button class="btn btn-primary dropdown-toggle orchard-dropdown" type="button" id="method" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccioná un método de cultivo</button>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="method" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <a class="dropdown-item orchard-dropdown-item" href="#/new-orchard/community">Convencional</a>
+                        <a class="dropdown-item orchard-dropdown-item" href="#/new-orchard/community">Hidropónico</a>
+                        <a class="dropdown-item orchard-dropdown-item" href="#/new-orchard/community">Vertical</a>
+                    </div>
                 </div>
             </div>
-
         </div>
+        <nav class="navbar navbar-fixed-bottom scrolling-navbar double-nav top-nav-collapse">
+            <div class="pull-right">
+                <a href="#/new-orchard/community" data-activates="slide-out" class="button-collapse">
+                    SIGUIENTE
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+        </nav>
     </div>
 </div>
-
-<nav class="navbar navbar-fixed-bottom scrolling-navbar double-nav top-nav-collapse">
-    <div class="pull-right">
-        <a href="#/new-orchard/community" data-activates="slide-out" class="button-collapse">
-            SIGUIENTE
-            <i class="fa fa-chevron-right"></i>
-        </a>
-    </div>
-</nav>

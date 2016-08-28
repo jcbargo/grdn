@@ -36,6 +36,7 @@
                     $('.js-community-list').append(markup);
                     $('.js-username-lookup').val('');
                 }
+                google.maps.event.addDomListener(window, 'load', mapInit);
             });
 
             $('.js-chip-close').on("click", function(event) {

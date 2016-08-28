@@ -21,9 +21,6 @@
     .when('/sign-in', {
       templateUrl: viewsBasePath + 'sign-in.html'
     })
-    .when('/new-orchard/navigator', {
-      templateUrl: viewsBasePath + 'orchard/navigator.html'
-    })
     .when('/new-orchard/name', {
       templateUrl: viewsBasePath + 'orchard/name.html'
     })
@@ -37,12 +34,9 @@
       controllerAs: 'orchardsPlaceCtrl',
       templateUrl: viewsBasePath + 'orchard/place.html'
     })
-    .when('/new-orchard/dates', {
-      controller: 'OrchardsDatesCtrl',
-      controllerAs: 'orchardsDatesCtrl',
-      templateUrl: viewsBasePath + 'orchard/dates.html'
-    })
     .when('/new-orchard/products', {
+      controller: 'OrchardsProductsCtrl',
+      controllerAs: 'orchardsProductsCtrl',
       templateUrl: viewsBasePath + 'orchard/products.html'
     })
     .when('/orchard-list', {
@@ -54,7 +48,7 @@
     .when('/orchard/selected/2', {
       templateUrl: viewsBasePath + 'orchard/selected-orchard-2.html'
     })
-    .when('/tasks', {
+    .when('/dashboard', {
       controller: 'TasksCtrl',
       controllerAs: 'tasksCtrl',
       templateUrl: viewsBasePath + 'tasks.html'

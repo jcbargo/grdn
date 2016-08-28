@@ -18,6 +18,12 @@
 
         $scope.$on('$viewContentLoaded', function() {
             google.maps.event.addDomListener(window, 'load', mapInit);
+
+
+            $('#date-start').bootstrapMaterialDatePicker
+            ({
+                weekStart: 0, format: 'DD/MM/YYYY'
+            });
         });
 
         function mapInit() {

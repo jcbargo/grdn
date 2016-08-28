@@ -47,3 +47,19 @@
 .dtp .clearfix { clear: both; }
 
 .dtp .center { text-align: center; }
+
+.dtp > .dtp-content > .dtp-date-view > header.dtp-header {
+    background-color: #ff6d00;
+}
+.dtp div.dtp-date, .dtp div.dtp-time {
+    background-color: #d8d8d8;
+}
+.dtp .p10 > a {
+    color: #ff6d00;
+}
+.dtp table.dtp-picker-days tr > td > a.selected {
+    background-color: #ff6d00;
+}
+.dtp div.dtp-actual-year {
+    color: #ff6d00;
+}

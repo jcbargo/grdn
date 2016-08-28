@@ -12,16 +12,30 @@
     color: #ff6d00;
 }
 .orchard-card {
-    background-color: #F0F2F4;
-
-    position: fixed;
+    /*background-color: #F0F2F4;*/
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
 }
+.orchard-card-field {
+    margin-top: 24px;
+}
+.orchard-dropdown {
+    width: 100%;
+    margin-left: 0px;
+}
+.orchard-dropdown-item {
+    margin: 24px 0;
+}
 .community-list {
     margin-bottom: 20px;
+}
+.product {
+    color: #435b67;
+}
+.product .orchard-name {
+    font-size: 16px;
 }
 .chip {
     display: inline-block;
@@ -137,4 +151,12 @@ header,
 .modal-dialog-center {
   text-align: center;
   padding: 25px;
+}
+
+.LoginInput {
+  margin-top: 30px;
+}
+
+.date-view-content {
+  margin-top: 20px
 }
