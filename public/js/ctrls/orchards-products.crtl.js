@@ -18,6 +18,7 @@
 
         $scope.$on('$viewContentLoaded', function() {
             $('.js-product').on("click", function(event) {
+                event.preventDefault();
                 var removeIcon = '<i class="js-chip-close close fa fa-times"></i>';
 
                 $('.js-products-list').append($(this));
