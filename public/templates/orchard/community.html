@@ -1,34 +1,41 @@
-<div class="orchard-card">
-    <div class="card-content">
-        <div class="card-block">
+<input type='checkbox' id='sideToggle' hidden>
+<ng-include src="'templates/sidenav.html'"></ng-include>
+<div id='contentWrap'>
+    <div class="app-bar col-xs-12">
+        <label class='menuBtn' for='sideToggle'>&minus;</label>
+        <h1>Colaboradores</h1>
+    </div>
+    <div class="col-xs-12 orchard-card">
+        <div class="card-content">
+            <div class="card-block">
 
-            <!--Component-->
-            <div class="md-form">
-                <i class="fa fa-search prefix"></i>
-                <input type="text" id="username" class="form-control js-username-lookup">
-                <label for="username" class="">Escribí el nombre de las personas que colaborán</label>
-            </div>
-            <div class="js-community-list community-list"></div>
-            <div class="md-form">
-                <input type="text" id="name" class="form-control js-community-qty">
-                <label for="name" class="">Escribí para cuántas personas cosecharán</label>
-            </div>
+                <!--Component-->
+                <div class="md-form">
+                    <i class="fa fa-search prefix"></i>
+                    <input type="text" id="username" class="form-control js-username-lookup">
+                    <label for="username" class="">Escribí el nombre de las personas que colaborarán</label>
+                </div>
+                <div class="js-community-list community-list"></div>
+                <div class="md-form">
+                    <input type="text" id="name" class="form-control js-community-qty">
+                    <label for="name" class="">Escribí para cuántas personas cosecharán</label>
+                </div>
 
+            </div>
         </div>
     </div>
+    <nav class="navbar navbar-fixed-bottom scrolling-navbar double-nav top-nav-collapse">
+        <div class="pull-left">
+            <a href="#/new-orchard/name" data-activates="slide-out" class="button-collapse">
+                <i class="fa fa-chevron-left"></i>
+                ANTERIOR
+            </a>
+        </div>
+        <div class="pull-right">
+            <a href="#/new-orchard/place" data-activates="slide-out" class="button-collapse">
+                SIGUIENTE
+                <i class="fa fa-chevron-right"></i>
+            </a>
+        </div>
+    </nav>
 </div>
-
-<nav class="navbar navbar-fixed-bottom scrolling-navbar double-nav top-nav-collapse">
-    <div class="pull-left">
-        <a href="#/new-orchard/name" data-activates="slide-out" class="button-collapse">
-            <i class="fa fa-chevron-left"></i>
-            ANTERIOR
-        </a>
-    </div>
-    <div class="pull-right">
-        <a href="#/new-orchard/place" data-activates="slide-out" class="button-collapse">
-            SIGUIENTE
-            <i class="fa fa-chevron-right"></i>
-        </a>
-    </div>
-</nav>

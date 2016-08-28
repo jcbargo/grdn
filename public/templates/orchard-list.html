@@ -1,53 +1,61 @@
-<div class="col-xs-12 tasks">
-    <!--Card-->
-    <a href="/#/orchard/selected/1" class="text-black">
-    	<div class="card">
-	        <!--Card content-->
-	        <div class="card-block">
-	            <div class="media">
-	                <div class="media-left">
-	                    <div class="color-tag green"></div>
-	                </div>
-	                <div class="media-body">
-	                    <h4 class="card-title media-heading">Jardín del Sexto Piso</h4>
-	                    <p class="orchard-name remove-margin">Tomates, cebollas, apio, culantro</p>
-	                    <p class="card-text remove-margin">Cultivando para 10 personas</p>
-	                    <p class="card-text ">Cartago, Costa Rica</p>
-	                    <div class="participants">
-	                    	<img class="img-circle" src="https://avatars3.githubusercontent.com/u/2398379?v=3&s=60">
-	                    	<img class="img-circle" src="https://avatars0.githubusercontent.com/u/2336196?v=3&s=460">
-	                    </div>
-	                    <i class="swipe-right fa fa-angle-right"></i>
-	                </div>
-	            </div>
-	        </div>
-	        <!--/.Card content-->
-	    </div>
-    </a>
-    <!--/.Card-->
-    <!--Card-->
-    <a href="/#/orchard/selected/2" class="text-black">
-	    <div class="card">
-	        <!--Card content-->
-	        <div class="card-block">
-	            <div class="media">
-	                <div class="media-left">
-	                    <div class="color-tag yellow"></div>
-	                </div>
-	                <div class="media-body">
-	                    <h4 class="card-title media-heading">Mi Jardín</h4>
-	                    <p class="orchard-name remove-margin">Albahacas, tomates cherry, berenjenas</p>
-	                    <p class="card-text remove-margin">Cultivando para 2 personas</p>
-	                    <p class="card-text ">Cartago, Costa Rica</p>
-	             		<div class="participants">
-	             			<img class="img-circle" src="https://avatars3.githubusercontent.com/u/2398379?v=3&s=60">
-	             		</div>
-	             		<i class="swipe-right fa fa-angle-right"></i>
-	                </div>
-	            </div>
-	        </div>
-	        <!--/.Card content-->
-	    </div>
-    </a>
-    <a href="/#/new-orchard/name" class="floating-button fixed-action-btn"><p class="plus">+</p></a>
+<input type='checkbox' id='sideToggle' hidden>
+<ng-include src="'templates/sidenav.html'"></ng-include>
+<div id='contentWrap'>
+    <div class="app-bar col-xs-12">
+        <label class='menuBtn' for='sideToggle'>&minus;</label>
+        <h1>Jardines</h1>
+    </div>
+    <div class="col-xs-12 tasks list">
+        <!--Card-->
+        <a href="/#/orchard/selected/1" class="text-black">
+        	<div class="card">
+    	        <!--Card content-->
+    	        <div class="card-block">
+    	            <div class="media">
+    	                <div class="media-left">
+    	                    <div class="color-tag green"></div>
+    	                </div>
+    	                <div class="media-body">
+    	                    <h4 class="card-title media-heading">Jardín del Sexto Piso</h4>
+    	                    <p class="orchard-name remove-margin">Tomates, cebollas, apio, culantro</p>
+    	                    <p class="card-text remove-margin">Cultivando para 10 personas</p>
+    	                    <p class="card-text ">Cartago, Costa Rica</p>
+    	                    <div class="participants">
+    	                    	<img class="img-circle" src="https://avatars3.githubusercontent.com/u/2398379?v=3&s=60">
+    	                    	<img class="img-circle" src="https://avatars0.githubusercontent.com/u/2336196?v=3&s=460">
+    	                    </div>
+    	                    <i class="swipe-right fa fa-angle-right"></i>
+    	                </div>
+    	            </div>
+    	        </div>
+    	        <!--/.Card content-->
+    	    </div>
+        </a>
+        <!--/.Card-->
+        <!--Card-->
+        <a href="/#/orchard/selected/2" class="text-black">
+    	    <div class="card">
+    	        <!--Card content-->
+    	        <div class="card-block">
+    	            <div class="media">
+    	                <div class="media-left">
+    	                    <div class="color-tag yellow"></div>
+    	                </div>
+    	                <div class="media-body">
+    	                    <h4 class="card-title media-heading">Mi Jardín</h4>
+    	                    <p class="orchard-name remove-margin">Albahacas, tomates cherry, berenjenas</p>
+    	                    <p class="card-text remove-margin">Cultivando para 2 personas</p>
+    	                    <p class="card-text ">Cartago, Costa Rica</p>
+    	             		<div class="participants">
+    	             			<img class="img-circle" src="https://avatars3.githubusercontent.com/u/2398379?v=3&s=60">
+    	             		</div>
+    	             		<i class="swipe-right fa fa-angle-right"></i>
+    	                </div>
+    	            </div>
+    	        </div>
+    	        <!--/.Card content-->
+    	    </div>
+        </a>
+        <a href="/#/new-orchard/name" class="floating-button fixed-action-btn"><p class="plus">+</p></a>
+    </div>
 </div>
