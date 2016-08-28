@@ -70,6 +70,7 @@
 html,
 body,
 header,
+.root-view,
 .view {
     height: 100%;
 }

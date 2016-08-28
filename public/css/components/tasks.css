@@ -53,8 +53,9 @@
 }
 
 .tasks .options .option {
-  margin-left: 20px;
+  margin-left: 15px;
   cursor: pointer;
+  font-size: 0.8rem;
 }
 
 .swipe-right {
@@ -84,9 +85,12 @@
 
 .tasks .list-group button {
   border: none;
+  text-align: left;
+  padding: 5px;
+  font-size: 0.9rem;
 }
 
 .tasks .list-group .fa {
   min-width: 15px;
-  margin-right: 10px;
+  margin-right: 5px;
 }

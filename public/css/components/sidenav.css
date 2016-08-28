@@ -1,0 +1,132 @@
+.floatl {
+  float: left;
+}
+
+/* Side menu */
+.sideMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 250px;
+  background-color: #fafafa;
+	box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24), 0 0 16px 0 rgba(0, 0, 0, 0.18);
+  color: #FFF;
+  overflow-y: hidden;
+}
+.sideMenu > ul {
+  padding: 0;
+  list-style: none;
+  margin: 20px 0;
+}
+.sideMenu > ul > li {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.sideMenu > ul > li a {
+  color: #CCC;
+  text-decoration: none;
+  display: block;
+  line-height: 3.2;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0 -10px;
+  padding: 0 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.4s cubic-bezier(0.335, 0.815, 0.47, 1);
+}
+.sideMenu > ul > li a:hover {
+  color: #222;
+  /*text-indent: 250px;*/
+}
+/*.sideMenu > ul > li a::before {
+  content: attr(data-value);
+  color: #FFF;
+  float: left;
+  width: 250px;
+  margin-left: -250px;
+}*/
+
+/* Toggle button */
+.menuBtn {
+  display: inline-block;
+  border-radius: 50px;
+  color: #FFF;
+  cursor: pointer;
+  display: block;
+  font: bold 1.7em/36px Courier New;
+  /*width: 36px;*/
+  height: 36px;
+  /*text-align: center;*/
+  text-shadow: 0 -5px, 0 5px;
+}
+/*.menuBtn:hover {
+  background: #222;
+}*/
+
+/* Content handing */
+#contentWrap {
+  min-height: 100%;
+  position: relative;
+  z-index: 1;
+  background: #FFF;
+  transition: 0.4s cubic-bezier(0.335, 0.815, 0.47, 1);
+}
+#contentWrap > div:not(.app-bar) {
+  /*padding-top: 56px;*/
+}
+#sideToggle:checked ~ #contentWrap {
+  -webkit-transform: translatex(250px);
+  border-radius: 8px;
+  transform: translatex(250px);
+}
+#sideToggle:checked ~ #he .sideMenu {
+  z-index: 2;
+}
+
+.sideMenu .profile-header {
+  background-color: #455a64;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.sideMenu h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1px;
+}
+
+.sideMenu .email {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.sideMenu img {
+  margin-bottom: 10px;
+}
+
+.sideMenu li {
+  margin-top: 15px;
+}
+
+.sideMenu a {
+  color: #373a3c;
+  font-size: 0.9rem;
+}
+
+.sideMenu a:hover {
+  color: #373a3c;
+}
+
+.sideMenu button {
+  border-radius: 30px;
+}
+
+.sideMenu .sticky-footer {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+}
