@@ -35,6 +35,8 @@
       templateUrl: viewsBasePath + 'orchard/place.html'
     })
     .when('/new-orchard/products', {
+      controller: 'OrchardsProductsCtrl',
+      controllerAs: 'orchardsProductsCtrl',
       templateUrl: viewsBasePath + 'orchard/products.html'
     })
     .when('/orchard-list', {
