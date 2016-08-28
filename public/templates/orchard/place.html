@@ -1,41 +1,46 @@
-<div class="orchard-card">
-    <div class="card-content">
-        <div class="card-block">
-
-            <!--Component-->
-            <div class="md-form">
-                <i class="fa fa-map-marker prefix"></i>
-                <input type="text" id="place-name" class="form-control">
-                <label for="place-name" class="">Lugar de la huerta</label>
-            </div>
-            <div class="mapComponent">
-                <div id="map-container" class="z-depth-1" style="height: 300px"></div>
-            </div>
-            <div class="datepickerComponent orchard-card-field">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-control-wrapper">
-                            <input type="text" id="date-start" class="form-control floating-label" placeholder="Fecha de inicio">
+<input type='checkbox' id='sideToggle' hidden>
+<ng-include src="'templates/sidenav.html'"></ng-include>
+<div id='contentWrap'>
+    <div class="app-bar col-xs-12">
+        <label class='menuBtn' for='sideToggle'>&minus;</label>
+        <h1>Fecha de inicio</h1>
+    </div>
+    <div class="col-xs-12 orchard-card">
+        <div class="card-content">
+            <div class="card-block">
+                <!--Component-->
+                <div class="md-form">
+                    <i class="fa fa-map-marker prefix"></i>
+                    <input type="text" id="place-name" class="form-control">
+                    <label for="place-name" class="">Lugar de la huerta</label>
+                </div>
+                <div class="mapComponent">
+                    <div id="map-container" class="z-depth-1" style="height: 300px"></div>
+                </div>
+                <div class="datepickerComponent orchard-card-field">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-control-wrapper">
+                                <input type="text" id="date-start" class="form-control floating-label" placeholder="Fecha de inicio">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+    <nav class="navbar navbar-fixed-bottom scrolling-navbar double-nav top-nav-collapse">
+        <div class="pull-left">
+            <a href="#/new-orchard/community" data-activates="slide-out" class="button-collapse">
+                <i class="fa fa-chevron-left"></i>
+                ANTERIOR
+            </a>
+        </div>
+        <div class="pull-right">
+            <a href="#/new-orchard/products" data-activates="slide-out" class="button-collapse">
+                SIGUIENTE
+                <i class="fa fa-chevron-right"></i>
+            </a>
+        </div>
+    </nav>
 </div>
-
-<nav class="navbar navbar-fixed-bottom scrolling-navbar double-nav top-nav-collapse">
-    <div class="pull-left">
-        <a href="#/new-orchard/community" data-activates="slide-out" class="button-collapse">
-            <i class="fa fa-chevron-left"></i>
-            ANTERIOR
-        </a>
-    </div>
-    <div class="pull-right">
-        <a href="#/new-orchard/products" data-activates="slide-out" class="button-collapse">
-            SIGUIENTE
-            <i class="fa fa-chevron-right"></i>
-        </a>
-    </div>
-</nav>
