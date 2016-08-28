@@ -31,6 +31,12 @@
 .community-list {
     margin-bottom: 20px;
 }
+.product {
+    color: #435b67;
+}
+.product .orchard-name {
+    font-size: 16px;
+}
 .chip {
     display: inline-block;
     font-size: 13px;
