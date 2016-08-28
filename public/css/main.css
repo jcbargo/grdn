@@ -96,6 +96,11 @@ header,
     position: relative;
 }
 
+.page-logo {
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
 .description {
     padding-top: 25%;
     padding-bottom: 3rem;
@@ -141,6 +146,11 @@ header,
   /*padding-top: 15px;*/
   /*margin-bottom: 0;*/
   z-index: 998;
+}
+
+.modal-dialog-center {
+  text-align: center;
+  padding: 25px;
 }
 
 .LoginInput {
