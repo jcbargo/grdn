@@ -30,4 +30,8 @@ grdn.mapInit = function() {
  */
 $( document ).ready(function() {
     google.maps.event.addDomListener(window, 'load', grdn.mapInit);
+
+    $('body').delegate('#congratsModal', 'hide.bs.modal', function (e) {
+      location.assign("/#/orchard-list");
+    })
 });
