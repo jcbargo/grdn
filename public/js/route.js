@@ -34,11 +34,6 @@
       controllerAs: 'orchardsPlaceCtrl',
       templateUrl: viewsBasePath + 'orchard/place.html'
     })
-    .when('/new-orchard/dates', {
-      controller: 'OrchardsDatesCtrl',
-      controllerAs: 'orchardsDatesCtrl',
-      templateUrl: viewsBasePath + 'orchard/dates.html'
-    })
     .when('/new-orchard/products', {
       templateUrl: viewsBasePath + 'orchard/products.html'
     })
